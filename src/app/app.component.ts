@@ -12,7 +12,7 @@ import moment from 'moment';
 export class AppComponent {
   title = 'Funeraria Cubillos';
 
-  fechaNacimiento = moment([1959, 3, 5]);
-  fechaActual = moment();
-  anios = this.fechaActual.diff(this.fechaNacimiento, 'years')
+  fechaNacimiento = moment([1959, 3, 5]).format('YYYY-MM-DD');
+  fechaActual = moment().format('YYYY-MM-DD');
+  anios = moment(this.fechaActual).diff(moment(this.fechaNacimiento), 'years')+1;
 }
