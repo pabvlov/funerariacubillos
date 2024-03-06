@@ -44,7 +44,7 @@
     height: 80px;
     width: 15rem;
     margin-right: 20px;
-    background-color: #44000f;
+    background-color: #2a7bc6;
     margin: 10px;
     border-radius: 10px;
     display: flex;
@@ -75,7 +75,7 @@ img#logo{
 }
 
 .nav-item {
-  border: 2px solid #44000f;
+  border: 2px solid #2a7bc6;
   border-radius: 10px;
   margin: 0 10px;
   min-width: 100px;
@@ -83,7 +83,7 @@ img#logo{
 }
 
 .nav-item.active {
-  background-color: #44000f;
+  background-color: #2a7bc6;
   color: white;
 }
 .container.extraInfoContainer {
@@ -124,4 +124,12 @@ p#extraInfo {
   text-align: center;
   margin: 0;
   padding: 20px 0;
+}
+
+.aboutDescription {
+  padding: 20px;
+  width: 70%;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: auto;
 }

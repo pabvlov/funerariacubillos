@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'funerariacubillos';
+  title = 'Funeraria Cubillos';
+
+  fechaNacimiento = moment([1959, 3, 5]);
+  fechaActual = moment();
+  anios = this.fechaActual.diff(this.fechaNacimiento, 'years')
 }
