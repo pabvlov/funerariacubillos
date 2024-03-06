@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/old-london');
+
 .video-background {
     position: fixed;
     right: 0; 
@@ -11,7 +13,7 @@
   }
   
   .video-background video {
-    position: fixed;
+    position: inherit;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -26,19 +28,15 @@
   }
 
 .navbar {
-    margin: 30px;
-    height: 80px;
+    margin: 30px 30px 0 30px;
+    height: auto;
     width: 70%;
     // center the navbar
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: start;
-    padding: 0 20px;
+    border-radius: 10px 10px 0 10px;
+    padding: 0 10px;
     z-index: 100;
-
 }
 
 .logo
@@ -47,4 +45,83 @@
     width: 15rem;
     margin-right: 20px;
     background-color: #44000f;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+img#logo{
+  // center img
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 80px;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  //center vertically
+  position: relative;
+  top: 50%;
+  transform: translateY(-30%);
+}
+
+#navbarCubillos {
+  justify-content: center;
+}
+
+.nav-item {
+  border: 2px solid #44000f;
+  border-radius: 10px;
+  margin: 0 10px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.nav-item.active {
+  background-color: #44000f;
+  color: white;
+}
+.container.extraInfoContainer {
+  width: 70%;
+  padding: 0 !important;
+}
+
+#navbarExtraInfo {
+  margin: 0 30px 30px 30px;
+  background-color: white;
+  border-bottom: 2px solid #577ddf;
+  width: 10%;
+  // align right
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+p#extraInfo {
+  margin: 0;
+  font-family: 'Old London', sans-serif;
+}
+
+.presentacion {
+  height: 80vh;
+}
+
+#about {
+  background-color: white;
+  height: 70vh;
+}
+
+.title h1 {
+  font-family: 'Old London', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
 }
