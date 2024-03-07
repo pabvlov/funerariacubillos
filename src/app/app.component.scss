@@ -215,3 +215,11 @@ app-card {
   background-color: #811515;
   color: white;
 }
+
+.vertical-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
