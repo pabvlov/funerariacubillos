@@ -1,27 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/old-london');
 
-.video-background {
-  position: absolute;
-  right: 0;
-  /* top: 0; */
-  min-width: 100%;
-  width: 100%;
-  z-index: -100;
-  overflow: hidden;
-}
-
-.video-background video {
-  position: relative;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-25%);
-  -moz-transform: translateX(-50%) translateY(-25%);
-  -webkit-transform: translateX(-50%) translateY(-25%);
-  transform: translateX(-50%) translateY(-30%);
-}
-
 .presentacion {
   height: 70vh;
 }
@@ -34,6 +12,29 @@
     padding: 0 10px;
     z-index: 100;
     top: 0;
+  }
+
+  .video-background {
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    min-width: 100%;
+    width: 100%;
+    z-index: -100;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .video-background video {
+    position: relative;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    z-index: -100;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-30%);
   }
 }
 /* for pc */
@@ -53,6 +54,28 @@
     left: 50%;
     transform: translateX(-50%);
     
+  }
+
+  .video-background {
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    min-width: 100%;
+    width: 100%;
+    z-index: -100;
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    position: relative;
+    left: 50%;
+    width: auto;
+    height: 110vh;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-25%);
+    -moz-transform: translateX(-50%) translateY(-25%);
+    -webkit-transform: translateX(-50%) translateY(-25%);
+    transform: translateX(-50%) translateY(-30%);
   }
 }
 
@@ -102,7 +125,7 @@ img#logo {
 .nav-item {
   border: 2px solid #2a7bc6;
   border-radius: 10px;
-  margin: 0 10px;
+  margin: 5px 10px;
   min-width: 100px;
   text-align: center;
 }
