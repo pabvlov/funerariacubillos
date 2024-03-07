@@ -20,3 +20,15 @@
   .fa-3x {
     font-size: 3em !important;
   }
+
+  .card {
+    /* sombra */
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.3);
+    border: 0;
+  }
+
+  .card:hover {
+    transition: .2s ease;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.5);
+    scale: 1.02;
+  }
