@@ -2,12 +2,14 @@ import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import moment from 'moment';
 import { CardComponent } from './shared/components/card/card.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
     CardComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

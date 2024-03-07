@@ -131,3 +131,27 @@ p#extraInfo {
 app-card {
   margin: 20px;
 }
+
+.carrozaMarca {
+  width: 6rem;
+  margin: 20px;
+}
+
+.carrozas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.bg-burdeo {
+  background-color: #811515;
+  color: white;
+}

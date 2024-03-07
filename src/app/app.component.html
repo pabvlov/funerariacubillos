@@ -51,15 +51,61 @@
     <!-- display 5 images responsive with bootstrap -->
     <div class="row">
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-        <app-card [title]="'Atención Personalizada'" [icon]="'fa-handshake'"></app-card>
+        <app-card [title]="'Arreglo Floral'" [icon]="'fa-seedling'"></app-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-        <app-card [title]="'Atención Personalizada'" [icon]="'fa-handshake'"></app-card>
+        <app-card [title]="'Servicios de Cremación'" [icon]="'fa-fire'"></app-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-        <app-card [title]="'Atención Personalizada'" [icon]="'fa-handshake'"></app-card>
+        <app-card [title]="'Traslado en carrozas'" [icon]="'fa-car'"></app-card>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <app-card [title]="'Coordinación'" [icon]="'fa-handshake'"></app-card>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <app-card [title]="'Certificación Médica'" [icon]="'fa-file-circle-check'"></app-card>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <app-card [title]="'Exhibición de Urnas'" [icon]="'fa-box'"></app-card>
       </div>
     </div>
+    <p class="text-center">Contamos con convenios con IPS, AFPs, Compañía del seguro y/o Rentas Vitalicias, Capredena, Dipreca.</p>
+  </div>
+  <div class="carrozas">
+    <img src="../assets/Mercedes-Logo.png" alt="Carrozas Funeraria Cubillos" class="img-fluid carrozaMarca">
+    <img src="../assets/Cadillac_logo.png" alt="Carrozas Funeraria Cubillos" class="img-fluid carrozaMarca">
   </div>
 </section>
 
+<section class="servicios bg-burdeo">
+  <div class="container">
+    <div class="title">
+      <h1>Han confiado en nosotros</h1>
+    </div>
+    <hr class="separador"><br>
+    <!-- display 5 images responsive with bootstrap -->
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/somarco-1.png.webp" alt="AFP" class="img-fluid cliente">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/empresas-tailor-1.png" alt="IPS" class="img-fluid cliente">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/cmf-1.png.webp" alt="Rentas Vitalicias" class="img-fluid cliente">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/logo-INCHCAPE-1.png" alt="Capredena" class="img-fluid cliente">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/logo-ultramar-1.png.webp" alt="Dipreca" class="img-fluid cliente">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <img src="../assets/logo-agenta-1.png.webp" alt="Compañía del seguro" class="img-fluid cliente">
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<app-footer [anios]="anios"></app-footer>
