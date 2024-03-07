@@ -36,6 +36,14 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%) translateY(-30%);
   }
+
+  .aboutDescription {
+    padding: 20px;
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: auto;
+  }
 }
 /* for pc */
 @media (min-width: 768px) {
@@ -76,6 +84,14 @@
     -moz-transform: translateX(-50%) translateY(-25%);
     -webkit-transform: translateX(-50%) translateY(-25%);
     transform: translateX(-50%) translateY(-30%);
+  }
+
+  .aboutDescription {
+    padding: 20px;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: auto;
   }
 }
 
@@ -168,14 +184,6 @@ p#extraInfo {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-}
-
-.aboutDescription {
-  padding: 20px;
-  width: 70%;
-  font-size: 1.2rem;
-  text-align: justify;
-  margin: auto;
 }
 
 app-card {
