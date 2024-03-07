@@ -5,33 +5,64 @@
   right: 0;
   /* top: 0; */
   min-width: 100%;
-  height: 70vh;
   width: 100%;
   z-index: -100;
-  background-size: cover;
+  overflow: hidden;
 }
 
 .video-background video {
-  position: absolute;
+  position: relative;
   left: 50%;
   width: 100%;
+  height: 100%;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-25%);
+  -moz-transform: translateX(-50%) translateY(-25%);
+  -webkit-transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-30%);
 }
 
-.navbar {
-  margin: 30px 30px 0 30px;
-  height: auto;
-  width: 70%;
-  // center the navbar
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px 10px 0 10px;
-  padding: 0 10px;
-  z-index: 100;
+.presentacion {
+  height: 70vh;
+}
+
+/* navbar for mobile with media*/
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 100;
+    top: 0;
+  }
+}
+/* for pc */
+@media (min-width: 768px) {
+  .navbar {
+    margin: 30px 30px 0 30px;
+    height: auto;
+    width: 70%;
+    // center the navbar
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0 10px;
+    padding: 0 10px;
+    z-index: 100;
+    position: absolute;
+    /* position the div in center */
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  transition: .2s ease;
 }
 
 .logo {
@@ -90,22 +121,18 @@ img#logo {
   margin: 0 30px 30px 30px;
   background-color: white;
   border-bottom: 2px solid #577ddf;
-  width: 10%;
+  width: 106px;
   // align right
   margin-left: auto;
   margin-right: 0;
-  border-radius: 0 0 10px 10px;
-  box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: -10px 10px -10px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
 p#extraInfo {
   margin: 0;
   font-family: 'Old London', sans-serif;
-}
-
-.presentacion {
-  height: 80vh;
 }
 
 #about {
