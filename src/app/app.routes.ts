@@ -1,15 +1,23 @@
-import { Routes } from '@angular/router'; // Replace './path/to/ServiciosComponent' with the actual path to the component
+import { Routes } from '@angular/router';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { FunebresComponent } from './servicios/funebres/funebres.component';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '',
+        component: ServiciosComponent,
         pathMatch: 'full'
     },
     {
-        path: 'home',
-        /* load component */
-        component: ServiciosComponent // Replace 'ServiciosComponent' with the actual component class
+        path: 'servicios',
+        /* load servicios module routing */
+        component: ServiciosComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'servicios/funebres',
+        /* load funebres component routing */
+        component: FunebresComponent,
+        pathMatch: 'full'
     }
 ];

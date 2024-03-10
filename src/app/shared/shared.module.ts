@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ServiciosModule } from '../servicios/servicios.module';
 import { RouterModule } from '@angular/router';
-import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
   ],
   imports: [
     CommonModule,
+    ServiciosModule,
     RouterModule
   ]
 })
