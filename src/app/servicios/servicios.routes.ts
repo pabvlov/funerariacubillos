@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router'; // Replace './path/to/ServiciosComponent' with the actual path to the component
-import { ServiciosComponent } from './servicios/servicios.component';
+import { ServiciosComponent } from './servicios.component';
+import { FunebresComponent } from './funebres/funebres.component';
 
 export const routes: Routes = [
     {
@@ -8,8 +9,13 @@ export const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'home',
+        path: 'servicios',
         /* load component */
         component: ServiciosComponent // Replace 'ServiciosComponent' with the actual component class
+    },
+    {
+        path: 'servicios/funebres',
+        /* load component */
+        component: FunebresComponent // Replace 'ServiciosComponent' with the actual component class
     }
 ];

@@ -1,4 +1,4 @@
-<div class="card">
+<a class="card" [routerLink]="['/servicios/funebres']" routerLinkActive="router-link-active" >
     <div class="card-body">
       <div class="icon">
         <i class="fa-solid fa-2x color-fire" [class]="icon"></i>
@@ -7,4 +7,6 @@
         <h6>{{ title }}</h6>
       </div>
     </div>
-</div>
+</a>
+
+<router-outlet></router-outlet>

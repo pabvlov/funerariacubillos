@@ -1,5 +1,5 @@
 <section class="presentacion">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
       <div class="logo">
         <img src="../assets/logo-white.png" alt="Funeraria Cubillos Viña del Mar Logo" class="img-fluid" id="logo">
       </div>
@@ -10,13 +10,15 @@
         <div class="navbar-nav p-4">
           <a class="nav-item nav-link active" href="#">Inicio</a>
           <a class="nav-item nav-link" href="#about">Nosotros</a>
-          <a class="nav-item nav-link" href="#">Servicios</a>
+          <a class="nav-item nav-link" href="#servicios">Servicios</a>
           <a class="nav-item nav-link" href="#">Contacto</a>
         </div>
       </div>
     </nav>
     
-    
+    <div class="contactUs">
+      <p class="text-white"><i class="fas fa-mobile me-3"></i>+56 9 9778 6390</p>
+    </div>
   <div class="video-background">
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="../assets/1063472734-preview.mp4" type="video/mp4">
@@ -30,17 +32,31 @@
 </div>
 <section id="about">
   <div class="container">
+    <br><br>
     <div class="title">
       <h1>Historia de Empresa Funeraria Cubillos</h1>
     </div>
     <hr class="separador">
     <div class="aboutDescription">
-      <p>Tras {{ anios }} años apoyando a familias chilenas, <span class="oldLondon">Funerales Cubillos</span> se ha posicionado como líder en el servicio funerario, apoyando a las familias en el difícil momento de la partida de un ser querido.</p>
-      <p>Luego de décadas de profesionalismo y esmero, se abre una sucursal autónoma en Viña del Mar, donde arraigó en el corazón de miles de familias de la ciudad jardín y en poco tiempo se ha distinguido por su servicio y confianza.</p>
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <div class="descripcion">
+            <p>Tras {{ anios }} años apoyando a familias chilenas, <span class="oldLondon">Funerales Cubillos</span> se ha posicionado como líder en el servicio funerario, apoyando a las familias en el difícil momento de la partida de un ser querido.</p>
+            <p>Luego de décadas de profesionalismo y esmero, se abre una sucursal autónoma en Viña del Mar, donde arraigó en el corazón de miles de familias de la ciudad jardín y en poco tiempo se ha distinguido por su servicio y confianza.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 creador">
+            <img src="../assets/juancubillos.png" alt="Fundador de Empresas Funerales Cubillos: Juan Cubillos" class="juancubillos">
+        </div>
+      </div>
+      
+      
+      
     </div>
   </div>
 </section>
-<section class="servicios">
+<section id="servicios">
+  <br><br><br><br>
   <div class="container">
     <div class="title">
       <h1>¿Qué ofrecemos?</h1>
@@ -75,10 +91,12 @@
     </div>
     <p class="text-center">Contamos con convenios con IPS, AFPs, Compañía de seguros y/o Rentas Vitalicias, Capredena, Dipreca.</p>
   </div>
-  <div class="carrozas">
+  <br><br><br>
+  <div class="carrozas bg-dark">
     <img src="../assets/Mercedes-Logo.png" alt="Carrozas Funeraria Cubillos" class="img-fluid carrozaMarca">
     <img src="../assets/Cadillac_logo.png" alt="Carrozas Funeraria Cubillos" class="img-fluid carrozaMarca">
   </div>
+  <br><br><br>
 </section>
 
 <section class="servicios">

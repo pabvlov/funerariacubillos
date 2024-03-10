@@ -36,7 +36,7 @@ onWindowScroll(event: Event) {
     // Get the navbar
     console.log(window.pageYOffset, navbar.offsetTop);
     
-    if (window.pageYOffset >= 100) {
+    if (window.pageYOffset >= 500) {
       navbar.classList.add("sticky")
     } else {
       navbar.classList.remove("sticky");
@@ -45,7 +45,5 @@ onWindowScroll(event: Event) {
 
   ngOnInit  () {
     
-    var navbar = document.getElementById("navbar")!;
-    var extraInfo = document.getElementsByClassName("extraInfoContainer")[0]!;
   }
 }
