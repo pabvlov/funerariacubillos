@@ -1,4 +1,4 @@
-<a class="card" [routerLink]="['/servicios/funebres']" routerLinkActive="router-link-active" [class]="title == 'Servicio Funerario de Repatriación' ? 'dorado': ''"
+<a class="card" [routerLink]="[redirect]" routerLinkActive="router-link-active" [class]="title == 'Servicio Funerario de Repatriación' ? 'dorado': ''"
     [class]="active ? 'bg-light' : 'bg-dark'">
     <div class="card-body">
       <div class="icon">
@@ -11,7 +11,7 @@
     <ng-container *ngIf="active; then volver else quedar"></ng-container>
     <ng-template #volver>
       <button class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
-              (click)="back()">
+              [routerLink]="'../../'" (click)="back($event)">
         <i class="fa-solid fa-xmark"></i>
         <span class="visually-hidden">volver</span>
       </button>

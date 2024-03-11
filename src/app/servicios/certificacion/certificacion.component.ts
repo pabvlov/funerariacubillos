@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { ServiceNavigationComponent } from '../../shared/components/service-navigation/service-navigation.component';
 
 @Component({
   selector: 'app-certificacion',
   standalone: true,
-  imports: [],
+  imports: [
+    ServiceNavigationComponent
+  ],
   templateUrl: './certificacion.component.html',
-  styleUrl: './certificacion.component.scss'
+  styleUrl: '../funebres/funebres.component.scss'
 })
 export class CertificacionComponent {
 

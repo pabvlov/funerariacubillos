@@ -1,12 +1,14 @@
 import { AfterContentInit, Component, Inject, Injectable, OnInit } from '@angular/core';
 import { CardComponent } from '../../shared/components/card/card.component';
 import { DOCUMENT } from '@angular/common';
+import { ServiceNavigationComponent } from '../../shared/components/service-navigation/service-navigation.component';
 
 @Component({
   selector: 'app-funebres',
   standalone: true,
   imports: [
-    CardComponent
+    CardComponent,
+    ServiceNavigationComponent
   ],
   templateUrl: './funebres.component.html',
   styleUrl: './funebres.component.scss'

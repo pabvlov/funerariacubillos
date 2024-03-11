@@ -1,6 +1,6 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { Route, RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -21,11 +21,9 @@ export class CardComponent {
   @Input() title: string = '';
   @Input() icon: string = '';
   @Input() active: boolean = false;
+  @Input() redirect: string = '';
 
-  back () {
-    console.log('back');
-    this.location.back();
-    
-    
+  back(event: any) {
+    event.preventDefault();
   }
 }

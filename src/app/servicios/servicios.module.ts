@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { FunebresComponent } from "./funebres/funebres.component";
 
 const routes: Routes = [
-  { path: '/', redirectTo: 'funebres' },
+  { path: '/', redirectTo: 'funebres', pathMatch: 'full' },
   { path: 'funebres', component: FunebresComponent },
 ];
 
