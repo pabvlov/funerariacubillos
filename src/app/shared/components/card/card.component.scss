@@ -28,10 +28,15 @@
     box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.3);
     border: 0;
     max-height: 64px;
+    text-decoration: none;
   }
 
   .card:hover {
     transition: .2s ease;
     box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.5);
     scale: 1.02;
+  }
+
+  .dorado {
+    border: 5px solid #dfb810;
   }
