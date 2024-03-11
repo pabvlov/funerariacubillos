@@ -259,3 +259,19 @@ p#extraInfo {
 #service {
   width: 70%;
 }
+
+.carrozas {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+
+.carrozaMarca {
+  // center both img center horizontal and vertical
+  max-width: 6rem;
+  align-items: center;
+  margin: 10px;
+  
+}
