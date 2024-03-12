@@ -19,8 +19,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
 export class AppComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
-onWindowScroll(event: Event) {
-    this.resize(event)
+onWindowScroll() {
+    this.resize()
 }
 
   title = 'Funeraria Cubillos';
@@ -29,14 +29,9 @@ onWindowScroll(event: Event) {
   fechaActual = moment().format('YYYY-MM-DD');
   anios = moment(this.fechaActual).diff(moment(this.fechaNacimiento), 'years')+1;
 
-  resize(event: Event) {
+  resize() {
 
     var navbar = document.getElementById("navbar")!;
-    var extraInfo = document.getElementsByClassName("extraInfoContainer")[0]!;
-
-    var sticky = navbar.offsetTop;
-    // Get the navbar
-    console.log(window.pageYOffset, navbar.offsetTop);
     
     if (window.pageYOffset >= 500) {
       navbar.classList.add("sticky")
