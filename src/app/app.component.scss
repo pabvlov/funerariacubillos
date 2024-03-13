@@ -275,3 +275,34 @@ p#extraInfo {
   margin: 10px;
   
 }
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.contactoForm {
+  width: 600px;
+  margin: 40px auto;
+}
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  display: flex;
+  z-index:100;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  margin: auto;
+}
