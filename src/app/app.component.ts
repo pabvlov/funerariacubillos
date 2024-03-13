@@ -18,7 +18,7 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnChanges {
+export class AppComponent {
 
   constructor(private fb: FormBuilder) {
   }
@@ -47,17 +47,12 @@ export class AppComponent implements OnChanges {
 
     var navbar = document.getElementById("navbar")!;
     this.height = window.pageYOffset;
-    console.log(this.height);
     
     if (window.pageYOffset >= 500) {
       navbar.classList.add("sticky")
     } else {
       navbar.classList.remove("sticky");
     }
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    this.contact.controls.nombre.valueChanges.subscribe(v => console.log(v));
   }
 
   enviarWhatsapp() {
