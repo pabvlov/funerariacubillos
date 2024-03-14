@@ -15,8 +15,12 @@ import { ServiceNavigationComponent } from '../../shared/components/service-navi
 })
 @Injectable()
 export class FunebresComponent implements AfterContentInit {
-
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  
+  private window: Window;
+  
+  constructor(@Inject(DOCUMENT) private document: Document) {
+    this.window = document.defaultView!;
+  }
 
   ngAfterContentInit() {
     
