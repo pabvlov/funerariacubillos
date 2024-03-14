@@ -1,5 +1,5 @@
 import { CommonModule, Location } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Route, RouterModule, RouterOutlet } from '@angular/router';
 
 
@@ -14,7 +14,7 @@ import { Route, RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
 
   constructor(private location: Location) {}
 
@@ -25,5 +25,8 @@ export class CardComponent {
 
   back(event: any) {
     event.preventDefault();
+  }
+
+  ngOnInit() {
   }
 }
