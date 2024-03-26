@@ -1,9 +1,6 @@
 <a class="card" [routerLink]="[redirect]" routerLinkActive="router-link-active" [class]="title == 'Servicio Funerario de Repatriación' ? 'dorado': ''"
     [class]="active ? 'bg-light' : 'bg-dark'">
     <div class="card-body">
-      <div class="icon">
-        <i class="fa-solid fa-2x color-fire" [class]="icon"></i>
-      </div>
       <div class="card-text text-white">
         <h6 [style]="active ? 'color: #000' : ''">{{ title }}</h6>
       </div>
@@ -17,5 +14,4 @@
       </button>
     </ng-template>
     <ng-template #quedar></ng-template>
-    
 </a>

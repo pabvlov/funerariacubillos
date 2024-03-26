@@ -23,10 +23,8 @@ export class FunebresComponent implements AfterContentInit {
   }
 
   ngAfterContentInit() {
-    
     var service = this.document.getElementById("service")!;
-    window.scrollTo(service.offsetTop -150, service.offsetTop -150);
-
+    this.window.scrollTo(service.offsetTop -150, service.offsetTop -150);
   }
 
 }

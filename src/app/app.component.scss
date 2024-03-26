@@ -271,9 +271,9 @@ p#extraInfo {
 .carrozaMarca {
   // center both img center horizontal and vertical
   max-width: 6rem;
+  max-height: 6rem;
   align-items: center;
-  margin: 10px;
-  
+  margin: auto 10px;
 }
 
 .map {
@@ -323,8 +323,7 @@ p#extraInfo {
 
 .flower{
     position: relative;
-    width: 30vmin;
-    margin: 30vh 0 0 0;
+    width: 27vmin;
 }
 
 .flower__glass{
@@ -654,4 +653,27 @@ p#extraInfo {
         transform-origin: center;
         transform:translate(-36vmin,1.1vmin) rotateY(-80deg) rotateX(35deg);
     }
+}
+
+.bg-carrozas {
+  background: url(../assets/DSC_0032.JPG) no-repeat center center fixed;
+  background-size: cover;
+  height: 30vh;
+}
+
+.card-img-top {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+div.card {
+  margin: 20px 0;
 }

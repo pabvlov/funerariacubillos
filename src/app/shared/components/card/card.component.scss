@@ -1,6 +1,8 @@
 .card-body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
   }
 
   
@@ -15,7 +17,6 @@
   
   div.card-text {
     text-align: justify;
-    margin: auto 30px auto 0;
   }
 
   .fa-3x {
@@ -40,4 +41,8 @@
 
   .dorado {
     border: 5px solid #dfb810;
+  }
+
+  h6 {
+    text-align: center;
   }

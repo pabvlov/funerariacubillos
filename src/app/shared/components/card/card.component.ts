@@ -14,19 +14,15 @@ import { Route, RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
-  constructor(private location: Location) {}
+  constructor() {}
 
   @Input() title: string = '';
-  @Input() icon: string = '';
   @Input() active: boolean = false;
   @Input() redirect: string = '';
 
   back(event: any) {
     event.preventDefault();
-  }
-
-  ngOnInit() {
   }
 }
