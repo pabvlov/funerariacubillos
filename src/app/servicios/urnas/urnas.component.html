@@ -11,9 +11,9 @@
                 Tenemos una gran variedad de estilos y modelos con la mejor calidad y modelo.</p>
                 
                 <div class="py-2">
-                    <p-button type="button" icon="pi pi-minus" (click)="prev()" styleClass="p-button-secondary mr-2">Anterior</p-button>
-                    <h6>{{ title }}</h6>
-                    <p-button type="button" icon="pi pi-plus" (click)="next()" styleClass="p-button-primary">Siguiente</p-button>
+                    <p-button type="button" icon="pi pi-minus" (click)="prev()" styleClass="p-button-secondary mr-2"><i class="fa-solid fa-angle-left"></i></p-button>
+                    <h6 style="text-transform: uppercase;">{{ title }}</h6>
+                    <p-button type="button" icon="pi pi-plus" (click)="next()" styleClass="p-button-primary"><i class="fa-solid fa-angle-right"></i></p-button>
                 </div>
                 <p-galleria [responsiveOptions]="responsiveOptions" [numVisible]="5" [(activeIndex)]="activeIndex" [value]="images">
                     <ng-template pTemplate="item" let-item>
