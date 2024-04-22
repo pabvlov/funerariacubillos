@@ -69,4 +69,9 @@ export class UrnasComponent {
     this.activeIndex--;
   }
 
+  // get image title by activeIndex
+  get title(): string {
+    return this.images ? this.images[this.activeIndex].title : '';
+  }
+
 }

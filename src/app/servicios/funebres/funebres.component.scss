@@ -39,17 +39,19 @@ p {
     margin: 20px;
 }
 
-.p-ripple {
-    border: 0;
-    background-color: transparent;
-}
-
 .py-2 {
     // set above the img
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
+    background-color: rgba(42, 123, 198, 1);
+    color: BLACK;
     margin-top: auto;
+    display: flex;
+    padding: 0 20px;
+}
 
+h6 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
